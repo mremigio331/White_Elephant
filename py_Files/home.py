@@ -12,7 +12,7 @@ def home():
     nname = st.sidebar.button('Next Name')
     if nname:
         next_name()
-        refresh()
+        #refresh()
 
     restart = st.sidebar.button('Restart')
     if restart:
@@ -36,7 +36,7 @@ def home():
     hname.header('Names')
     for x in names:
         if x == names[number]:
-            name.markdown(f'<p style="background-color:#c0c0c0;color:#000000;font-size:24px;border-radius:2%;text-align: center;">{x}</p>',
+            name.markdown(f'<p style="background-color:#c0c0c0;color:#000000;font-size:24px;border-radius:50%;text-align: center;">{x}</p>',
                           unsafe_allow_html=True)
         else:
             name.markdown(f'<p style="background-color:#146B3A;color:#000000;font-size:24px;border-radius:2%;text-align: center;">{x}</p>',
