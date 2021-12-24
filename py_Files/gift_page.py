@@ -70,7 +70,7 @@ def edit_gift():
     names = connect.names()
     names.sort()
 
-    names_selection = st.selectbox('Server', (names))
+    names_selection = st.selectbox('Name', (names))
 
     for i in names:
         if names_selection == i:
@@ -95,7 +95,7 @@ def edit_gift():
     change_gift_number = st.checkbox('Update Gift Number')
 
 
-    new_save = st.button('Update Server')
+    new_save = st.button('Update Gift')
 
     if new_save:
         if change_gift:
