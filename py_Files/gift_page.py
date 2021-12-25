@@ -20,10 +20,10 @@ def gift_page():
 
 def add_gift():
     st.sidebar.header('Gift Number Ranges:')
-    st.sidebar.subheader('Remigio-Nova House: 1-6')
-    st.sidebar.subheader('Remigio-Gorritz House: 7-10')
-    st.sidebar.subheader('Madera-Remigio House: 11-15')
-    st.sidebar.subheader('Morales-Nova House: 16 and up')
+    st.sidebar.subheader('Remigio-Nova House: 1-7')
+    st.sidebar.subheader('Remigio-Gorritz House: 8-11')
+    st.sidebar.subheader('Madera-Remigio House: 12-16')
+    st.sidebar.subheader('Morales-Nova House: 17 and up')
 
     largest_number()
     st.header('Add Gift')
