@@ -5,7 +5,7 @@ global gifts_df
 gifts_df = connect.presents()
 
 def gift_page():
-    st.title('Gifts Page')
+    st.title('Gifts Page (Página de Regalos)')
     selection = st.selectbox('Gift Options', ['Add Gift','Delete Gift','Edit Gift'])
 
     if selection == 'Add Gift':
@@ -19,9 +19,19 @@ def gift_page():
 
 
 def add_gift():
+    st.sidebar.header('Gift Number Ranges:')
+    st.sidebar.subheader('Remigio-Nova House: 1-6')
+    st.sidebar.subheader('Remigio-Gorritz House: 7-10')
+    st.sidebar.subheader('Madera-Remigio House: 11-15')
+    st.sidebar.subheader('Morales-Nova House: 16 and up')
+
     largest_number()
     st.header('Add Gift')
-    st.subheader('Gifts Numbers added include:')
+    st.subheader('Please fill out the form below. Type in your name, a short 1-3 word description of your gift, and the number assigned to your gift (see left for gift numbers per household). Once you are finished, select add gift.')
+    st.subheader("If you make a mistake you can select 'Edit Gift' from the Gift option drop down, find your name, check the box for what ever change you make, and press save.")
+    st.subheader('If you get an error and are confused hit Matt up.')
+    st.subheader('Do not change anything on the Home Page, I will control it.')
+    st.subheader('Gifts Numbers already used:')
     st.subheader(largest)
     name = st.text_input('Your Name')
     gift = st.text_input('Gift')

@@ -33,7 +33,7 @@ def home():
     hname, hgift, hselection= st.columns([1, 1, 1])
     name, gift, selection = st.columns([1, 1, 1])
 
-    hname.header('Names')
+    hname.header('Names (Nombres)')
     for x in names:
         if x == names[number]:
             name.markdown(f'<p style="background-color:#c0c0c0;color:#000000;font-size:24px;border-radius:50%;text-align: center;">{x}</p>',
@@ -41,8 +41,8 @@ def home():
         else:
             name.markdown(f'<p style="background-color:#146B3A;color:#000000;font-size:24px;border-radius:2%;text-align: center;">{x}</p>',
                           unsafe_allow_html=True)
-    hgift.header('Gifts')
-    hselection.header('Steals Left')
+    hgift.header('Gifts (Regalos)')
+    hselection.header('Changes Left (Cambios Restante)')
     for index, row in presents_df.iterrows():
         gifter = row[0]
         gift_name = row[1]
