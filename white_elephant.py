@@ -4,7 +4,7 @@ from py_Files import gift_page as gift
 from py_Files import connect
 
 st.set_page_config(page_title='White Elephant', page_icon='Images/welephant.png', layout='wide', initial_sidebar_state='auto')
-page = st.sidebar.selectbox('Page', ['Gifts Setup','Home'])
+page = st.sidebar.selectbox('Page', ['Home','Gifts Setup'])
 
 
 st.title('White Elephant (Elefante Blanco)')
