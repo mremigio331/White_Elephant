@@ -13,4 +13,5 @@ $ pip install -r requirements.txt
 
 $ streamlit run white_elephant.py
 
+# Have Fun!
 
